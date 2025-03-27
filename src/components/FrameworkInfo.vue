@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="card">
         <p>Название: <strong>{{ name }}</strong></p>
         <p>Версия: <strong>{{ version }} ({{ doubleVersion }})</strong></p>
         <button @click="changeToThree">Change</button>
@@ -32,6 +32,18 @@ export default {
 </script>
 
   <style lang="scss" scoped>
+
+.card {
+  width: 60%;
+  padding: 20px;
+  background-color: rgb(230, 225, 220);
+  margin: 30px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
   button {
   background-color: rgb(230, 225, 220);
   border-radius: 10px;
